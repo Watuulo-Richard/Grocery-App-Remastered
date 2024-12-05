@@ -1,0 +1,207 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #064e3b;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+
+   .left-navSection {
+    
+    display: flex;
+    align-items: center;
+        & i {
+            font-size: 2rem;
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            & img {
+                width: 6rem;
+                height: auto;
+            }
+
+            & p {
+                font-size: 1.5rem;
+                color:#cbd5e1;;
+            }
+        }
+   }
+
+   .center-navSection {
+        display: flex;
+        align-items: center;
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #cbd5e1;
+            color: #4b5563;
+            padding: 1rem 3rem;
+            border-radius: 2rem;
+            width: 800px;
+            & input {
+                border: none;
+                background-color: transparent;
+                font-size: 1rem;
+                outline: none;
+                
+            }
+        
+            & i {
+                font-size: 1.2rem;
+            }
+        }
+   }
+
+   .right-navSection {
+    
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+
+    & i {
+        color: #064e3b;
+        
+    }
+
+    & p {
+        font-size: 1.2rem;
+    }
+
+    & button {
+        border: none;
+        background-color: #cbd5e1;
+        padding: 1rem;
+        border-radius: 50%;
+        & i {
+            background-color: transparent;
+            font-size: 2rem;
+        }
+    }
+
+    .profile-bg {
+        
+        & a {
+            background-color: #cbd5e1;
+            padding: 1rem;
+            border: #064e3b dashed;
+            border-radius: 50%;
+            & i {
+                font-size: 2rem;
+            }
+        }
+    }
+   }
+
+//    media-query-section
+// @media (max-width: 1400px) {
+//     .left-navSection {
+//         // & i {
+//         //    display: none; 
+//         // }
+
+//         // .Logo {
+//         //     & p {
+//         //         display: none;
+//         //     }
+//         // }
+    
+//     }
+//     .center-navSection {
+//         // .search-container {
+//         //     display: flex;
+//         //     align-items: center;
+//         //     justify-content: space-between;
+//         //     width: 85%;
+//         //     padding: 1rem;
+//         // }
+        
+//     }
+//     .right-navSection {
+//         // & i {
+//         //     display: none;
+//         // }
+
+//         // & p {
+//         //     display: none;
+//         // }
+
+//     }
+//    }
+
+   @media (max-width: 991px) {
+    .left-navSection {
+        & i {
+           display: none; 
+        }
+
+        .Logo {
+            & p {
+                display: none;
+            }
+        }
+    
+    }
+    .center-navSection {
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem;
+        }
+        
+    }
+    .right-navSection {
+
+        & p {
+            display: none;
+        }
+
+    }
+   }
+
+   @media (max-width: 495px) {
+
+    .left-navSection {
+        display: none;
+        
+    }
+    .center-navSection {
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            
+            & input {
+                border: none;
+                background-color: transparent;
+                outline: none;
+                width: 80%;
+            }
+        
+            & i {
+                font-size: 1rem;
+            }
+            
+        }
+        
+    }
+    .right-navSection {
+        padding: 0rem 1rem;
+
+        & p {
+            display: none;
+        }
+
+        // & button {
+        //     display: none;
+        // }
+       
+    }
+   }
+}

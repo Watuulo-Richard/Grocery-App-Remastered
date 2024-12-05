@@ -1,0 +1,50 @@
+section {
+    .headings {
+        display: flex;
+        justify-content: space-between;
+
+        & h3 {
+            color: #1F2937;
+        }
+
+        & a {
+            text-decoration: none;
+            color: #1F2937;
+            font-weight: bold;
+        }
+    }
+
+    .main-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 1rem;
+        padding: 5rem 0rem;
+        .card-item {
+            background-color: #1F2937;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            width: 100%;
+            border-radius: 1rem;
+            overflow: hidden;
+            text-align: center;
+            font-size: 2rem;
+            & img {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: all .4s ease-in-out;
+            }
+
+            & img:hover {
+                scale: 1.09;
+            }
+
+            & h5 {
+                padding-top: 1rem;
+            }
+
+            .card-icon-container {
+                padding: 1rem 0rem;
+            }
+        }
+    }
+}
