@@ -1,0 +1,179 @@
+.product-details {
+    color: #1F2937;
+    border-radius: .5rem;
+    display: flex;
+    .left-side {
+        width: 50%;
+        
+        .image-container {
+            
+            & img {
+                width: 100%;
+                height: 600px;
+                object-fit: contain;
+                display: block;
+            }
+        }
+
+        .view-product {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .icon-left {
+                background-color: #064e3b;
+                padding: 1rem;
+                border-radius: 50%;
+
+                & i {
+                    color: #cbd5e1;
+                }
+            }
+            .img-one {
+                width: 10rem;
+                
+                & img {
+                    width: 100%;
+                    display: block;
+                    border-radius: 1rem;
+                }
+            }
+
+        }
+    }
+    .right-side {
+        width: 50%;
+        padding: 2rem;
+        .product-heading {
+            display: flex;
+            justify-content: space-between;
+
+            .product-text {
+                & p {
+                    width: 100%;
+                    border-bottom: #1F2937 solid .2rem;
+                }
+
+                & h3 {
+                    font-size: 3rem;
+                }
+            }
+
+            .sale-image {
+                width: 12rem;
+                & img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            
+        }
+
+        .product-subHeading {
+            & h3 {
+                font-size: 3rem;
+                margin: 2rem 0rem;
+                & span {
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
+            }
+            
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            gap: 2rem;
+            border-bottom: #1F2937 solid .2rem;
+            .btn {
+                margin: 2rem 0rem;
+                width: 50%;
+                padding: 1rem 5rem;
+                font-size: 1.5rem;
+                border: none;
+                border-radius: .5rem;
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+
+            .buy-now {
+                border: #064e3b solid .2rem;
+                background-color: #cbd5e1;
+            }
+
+            .buy-now:hover {
+                transform: translateY(-5px);
+                background-color: #064e3b;
+                color: #cbd5e1;
+            }
+
+            .add-cart {
+                background-color: #1F2937;
+                color: #cbd5e1;
+
+                & i {
+                    color: #cbd5e1;
+                }
+            }
+
+            .add-cart:hover {
+                background-color: #064e3b;
+                transform: translateY(-5px);
+            }
+        }
+
+        .how-we-work {
+            border-bottom: #1F2937 solid .2rem;
+            padding: 2rem 0rem;
+            .one {
+              & i {
+                padding-right: 1rem;
+              }  
+            }
+
+            .two {
+                & i {
+                  padding-right: 1rem;
+                }  
+            }
+        }
+
+        .description {
+            & h3 {
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 495px) {
+        flex-direction: column;
+        
+        .left-side{
+            width: 100%;
+            .image-container {
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+        .right-side {
+            width: 100%;
+
+            .buttons {
+                flex-wrap: wrap;
+                gap: 0rem;
+                .btn {
+                    width: 100%;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}

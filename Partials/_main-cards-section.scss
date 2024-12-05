@@ -1,4 +1,4 @@
-section {
+.main-cards-section {
     .headings {
         display: flex;
         justify-content: space-between;
@@ -27,9 +27,11 @@ section {
             overflow: hidden;
             text-align: center;
             font-size: 2rem;
+            
             & img {
                 width: 100%;
-                height: auto;
+                height: 50%;
+                object-fit: cover;
                 display: block;
                 transition: all .4s ease-in-out;
             }

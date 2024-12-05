@@ -1,0 +1,42 @@
+// 00226
+.featured-products  {
+    .featured-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 2rem;
+        .featured-card-item {
+            width: 100%;
+            background-color: #064e3b;
+            border-radius: .5rem;
+            .featured-image-container {
+                padding: 1rem;
+                
+                & img {
+                    width: 100%;
+                    display: block;
+                    
+                }
+            }
+            .featured-card-text {
+                text-align: center;
+            }
+            .featured-card-button {
+                padding: 3rem 0rem;
+                display: flex;
+                justify-self: center;
+                gap: 8rem;
+
+                & button {
+                    border: none;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    color:#064e3b;
+                    & i {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    
+}
